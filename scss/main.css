@@ -11983,11 +11983,35 @@ main {
 footer.footer {
   padding: 15px;
   position: absolute;
-  bottom: 0;
   width: 100%;
 }
 
 p {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
+}
+
+.hero-qa {
+  position: relative;
+}
+.hero-qa::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/hero-qa.webp");
+  background-size: cover;
+  filter: brightness(0.3);
+}
+.hero-qa * {
+  position: relative;
+}
+.hero-qa .hero-qa-content {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

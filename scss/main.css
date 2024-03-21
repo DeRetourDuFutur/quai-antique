@@ -11970,4 +11970,19 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/* Then add additional custom code here *//*# sourceMappingURL=main.css.map */
+/* Then add additional custom code here */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+main {
+  margin-bottom: 250px; /* Margin bottom by footer height */
+}
+
+footer.footer {
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */

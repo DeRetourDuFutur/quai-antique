@@ -12017,4 +12017,33 @@ p {
 }
 .hero-qa .text-justify {
   text-align: justify;
+}
+.hero-qa .image-card {
+  position: relative;
+}
+.hero-qa .image-card .titre-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-qa .image-card {
+  position: relative;
+}
+.hero-qa .image-card:hover .titre-image {
+  opacity: 1;
+}
+.hero-qa .image-card:hover img {
+  filter: brightness(0.3);
+}
+.hero-qa .image-card img {
+  transition: all 0.3s;
+}
+.hero-qa .image-card .titre-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s;
 }/*# sourceMappingURL=main.css.map */

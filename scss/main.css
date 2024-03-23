@@ -12005,41 +12005,37 @@ p {
   background-size: cover;
   filter: brightness(0.3);
 }
-.hero-qa * {
+
+* {
   position: relative;
 }
-.hero-qa .hero-qa-content {
+
+.hero-qa-content {
   height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.hero-qa .text-justify {
+
+.text-justify {
   text-align: justify;
 }
-.hero-qa .image-card {
+
+.image-card {
   position: relative;
 }
-.hero-qa .image-card .titre-image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.hero-qa .image-card {
-  position: relative;
-}
-.hero-qa .image-card:hover .titre-image {
+.image-card:hover .titre-image {
   opacity: 1;
+  color: white;
 }
-.hero-qa .image-card:hover img {
+.image-card:hover img {
   filter: brightness(0.3);
 }
-.hero-qa .image-card img {
+.image-card img {
   transition: all 0.3s;
 }
-.hero-qa .image-card .titre-image {
+.image-card .titre-image {
   position: absolute;
   top: 50%;
   left: 50%;

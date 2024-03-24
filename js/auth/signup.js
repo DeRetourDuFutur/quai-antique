@@ -4,7 +4,7 @@
 const inputNom = document.getElementById("NomInput");
 const inputPrenom = document.getElementById("PrenomInput");
 const inputEmail = document.getElementById("EmailInput");
-const inpuPassword = document.getElementById("PasswordInput");
+const inputPassword = document.getElementById("PasswordInput");
 const inputConfirmPassword = document.getElementById("PasswordConfirmInput");
 const btnValidation = document.getElementById("btn-validation-inscription");
 
@@ -14,17 +14,8 @@ inputEmail.addEventListener("keyup", validateForm);
 inputPassword.addEventListener("keyup", validateForm);
 inputConfirmPassword.addEventListener("keyup", validateForm);
 
-// const text =
-//   "Bonjour, voici mon adresse e-mail : contact@example.com et une autre adresse : info@exemple.com";
-// const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-// const matche = text.match(emailRegex);
-// if (matche) {
-//   console.log("Adresse e-mail valide !");
-// } else {
-//   console.log("Adresse e-mail invalide !");
-// }
+// Fonctions permettant de valider les champs du formulaire
 
-// Fonction permettant de valider le formulaire
 function validateForm() {
   const nomOK = validateRequired(inputNom);
   const prenomOK = validateRequired(inputPrenom);
@@ -39,7 +30,7 @@ function validateForm() {
 }
 
 function validateMail(input) {
-  //Définir mon regex
+  //   Définir mon regex
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const mailUser = input.value;
   if (mailUser.match(emailRegex)) {
@@ -65,6 +56,18 @@ function validatePassword(input) {
   } else {
     input.classList.remove("is-valid");
     input.classList.add("is-invalid");
+    return false;
+  }
+}
+
+function validateConfirmationPassword(inputPassword, inputConfirmPassword) {
+  if (inputPassword.value == inputConfirmPassword.value) {
+    inputConfirmPassword.classList.add("is-valid");
+    inputConfirmPassword.classList.remove("is-invalid");
+    return true;
+  } else {
+    inputConfirmPassword.classList.add("is-invalid");
+    inputConfirmPassword.classList.remove("is-valid");
     return false;
   }
 }

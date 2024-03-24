@@ -2,27 +2,27 @@ import Route from "./Route.js";
 
 //Définir ici vos routes
 export const allRoutes = [
-  new Route("/", "Accueil", "/pages/home.html"),
-  new Route("/Galerie", "Galerie", "/pages/galerie.html"),
-  new Route("/Menus", "Nos Menus", "/pages/menus.html"),
+  new Route("/", "Accueil", "../pages/home.html"),
+  new Route("/Galerie", "Galerie", "../pages/galerie.html"),
+  new Route("/Menus", "Nos Menus", "../pages/menus.html"),
   new Route(
     "/AllResa",
     "Vos réservations",
-    "/pages/reservations/all-resa.html"
+    "../pages/reservations/all-resa.html"
   ),
-  new Route("/Reserver", "Réserver", "/pages/reservations/new-resa.html"),
-  new Route("/Compte", "Mon Compte", "/pages/auth/account.html"),
-  new Route("/Sign-In", "Connexion", "/pages/auth/sign-in.html"),
+  new Route("/Reserver", "Réserver", "../pages/reservations/new-resa.html"),
+  new Route("/Compte", "Mon Compte", "../pages/auth/account.html"),
+  new Route("/SignIn", "Connexion", "../pages/auth/signin.html"),
   new Route(
-    "/Sign-Up",
+    "/SignUp",
     "Inscription",
-    "/pages/auth/sign-up.html",
-    "/js/auth/sign-up.js"
+    "../pages/auth/signup.html",
+    "../js/auth/signup.js"
   ),
   new Route(
     "/editPassword",
     "Modification du mot de passe",
-    "/pages/auth/edit-password.html"
+    "../pages/auth/edit-password.html"
   ),
 ];
 

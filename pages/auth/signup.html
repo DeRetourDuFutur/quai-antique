@@ -14,6 +14,8 @@
         id="NomInput"
         placeholder="Votre NOM"
       />
+
+      <div class="invalid-feedback">Le Nom est requis.</div>
     </div>
     <div class="mb-3">
       <label for="PrenomInput" class="form-label">Prénom</label>
@@ -23,40 +25,38 @@
         id="PrenomInput"
         placeholder="Votre Prénom"
       />
+
+      <div class="invalid-feedback">Le Prénom est requis.</div>
     </div>
     <div class="mb-3">
       <label for="EmailInput" class="form-label">Email</label>
-      <input
-        type="text"
-        class="form-control"
-        id="EmailInput"
-        placeholder="test@gmail.com"
-      />
-    </div>
-    <div class="mb-3">
-      <label for="PasswordInput" class="form-label">Mot de passe</label>
-      <input
-        type="password"
-        class="form-control"
-        id="PasswordInput"
-        placeholder="************"
-      />
+      <input type="email" class="form-control" id="EmailInput" />
+
       <div class="invalid-feedback">
-        Votre mot de passe n'est pas assez robuste : il doit contenir au moins 8
-        caractères, comprenant au moins une lettre majuscule, une lettre
-        minuscule, un chiffre et un caractère spécial.
+        Le mail doit contenir du texte avant l'@, qui est obligtoire, ainsi
+        qu'une extension finale formant un domaine valide.
       </div>
     </div>
     <div class="mb-3">
-      <label for="PaswordConfirmInput" class="form-label"
+      <label for="PasswordInput" class="form-label">Mot de passe </label>
+      <input type="password" class="form-control" id="PasswordInput" />
+      <div class="invalid-feedback">
+        Votre mot de passe n'est pas assez fort : il doit contenir au moins 8
+        caractères, comprenant au moins une lettre majuscule, une lettre
+        minuscule, un chiffre et un caractère spécial.
+      </div>
+      <div class="valid-feedback">
+        Votre mot de passe correspond aux critères de validation.
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="PasswordConfirmInput" class="form-label"
         >Confirmez votre mot de passe</label
       >
-      <input
-        type="password"
-        class="form-control"
-        id="PaswordConfirmInput"
-        placeholder="************"
-      />
+      <input type="password" class="form-control" id="PasswordConfirmInput" />
+      <div class="invalid-feedback">
+        La confirmation ne correspond pas au mot de passe saisi.
+      </div>
     </div>
     <div class="text-center">
       <button
@@ -70,6 +70,6 @@
   </form>
   <div class="text-center pt-3">
     Vous avez déjà un compte ?
-    <a href="/Sign-In">Connectez-vous ici</a>
+    <a href="/SignIn">Connectez-vous ici</a>
   </div>
 </div>

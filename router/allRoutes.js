@@ -13,7 +13,12 @@ export const allRoutes = [
   new Route("/Reserver", "Réserver", "/pages/reservations/new-resa.html"),
   new Route("/Compte", "Mon Compte", "/pages/auth/account.html"),
   new Route("/Sign-In", "Connexion", "/pages/auth/sign-in.html"),
-  new Route("/Sign-Up", "Inscription", "/pages/auth/sign-up.html"),
+  new Route(
+    "/Sign-Up",
+    "Inscription",
+    "/pages/auth/sign-up.html",
+    "/js/auth/sign-up.js"
+  ),
   new Route(
     "/editPassword",
     "Modification du mot de passe",
